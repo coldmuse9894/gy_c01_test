@@ -1,0 +1,11 @@
+Hello
+ft_ft test result: 42
+ft_ultimate_ft test result: 42
+Before ft_swap: a = 100, b = 200
+After ft_swap: a = 200, b = 100
+ft_div_mod test: 30 / 7 = 4, remainder = 2
+ft_ultimate_div_mod test: quotient = 4, remainder = 2
+ft_strlen test: Length of "Hello" is 5
+Original array: 5 3 7 1 4 
+Reversed array: 4 1 7 3 5 
+Sorted array: 1 3 4 5 7 

@@ -1,0 +1,23 @@
+#!/bin/bash
+norminette -R CheckForbiddenSourceHeader ex*/
+if [ -e a.out ]; then
+	rm a.out
+fi
+if [ -e diff.txt ]; then
+		rm diff.txt
+fi
+if [ -e output.txt ]; then
+		rm output.txt
+fi
+cc -Wall -Wextra -Werror c01_main.c ex0*/*.c
+
+
+./a.out > output.txt
+diff output.txt correct_result > diff.txt
+cat diff.txt
+if [ -s diff.txt ]; then
+	echo "incorrect"
+else
+	echo "correct"
+fi
+
